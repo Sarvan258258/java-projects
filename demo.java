@@ -59,31 +59,31 @@
 // }
 
 
-import java.io.*;
-import java.net.*;
+// import java.io.*;
+// import java.net.*;
 
-public class demo {
-    public static void main(String[] args) {
-        try (Socket socket = new Socket("localhost", 12345)) {
-            InputStream input = socket.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+// public class demo {
+//     public static void main(String[] args) {
+//         try (Socket socket = new Socket("localhost", 12345)) {
+//             InputStream input = socket.getInputStream();
+//             BufferedReader reader = new BufferedReader(new InputStreamReader(input));
 
-            OutputStream output = socket.getOutputStream();
-            PrintWriter writer = new PrintWriter(output, true);
+//             OutputStream output = socket.getOutputStream();
+//             PrintWriter writer = new PrintWriter(output, true);
 
-            BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
-            String message;
-            while ((message = consoleReader.readLine()) != null) {
-                writer.println(message);
-                System.out.println("Received from server: " + reader.readLine());
-            }
+//             BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+//             String message;
+//             while ((message = consoleReader.readLine()) != null) {
+//                 writer.println(message);
+//                 System.out.println("Received from server: " + reader.readLine());
+//             }
 
-            socket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-}
+//             socket.close();
+//         } catch (IOException e) {
+//             e.printStackTrace();
+//         }
+//     }
+// }
 
 
 
