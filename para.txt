@@ -1,0 +1,6 @@
+Stop words are commonly used words in a language that are 
+often filtered out in text processing because they carry 
+little meaningful information. Here are some examples of stop words in English:
+These words are typically removed in natural language processing
+ tasks to focus on the more significant words in a text. If you 
+ need a more comprehensive list, let me know!

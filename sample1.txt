@@ -1,0 +1,3 @@
+No of Alphabets = 59
+No of Digits are = 28
+No of special symbols = 50
